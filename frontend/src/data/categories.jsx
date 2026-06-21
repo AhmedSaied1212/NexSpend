@@ -1,0 +1,118 @@
+import { 
+  Utensils, 
+  Receipt, 
+  ShoppingCart, 
+  Briefcase, 
+  Laptop, 
+  Coins, 
+  Tag,
+  Car,
+  Gamepad2,
+  HeartPulse,
+  GraduationCap,
+  ShoppingBag,
+  Home,
+  Zap,
+  ShieldCheck,
+  Scissors,
+  Gift,
+  Plane,
+  Award,
+  Key,
+  PieChart,
+  TrendingUp,
+  Undo,
+  Coffee,
+    Smartphone,
+  Wifi,
+  Fuel,
+  CarTaxiFront,
+  SquareParking,
+  Wrench,
+  Baby,
+  PawPrint,
+  Pill,
+  Dumbbell,
+  Shirt,
+  Landmark,
+  HandHeart,
+  Soup,
+  BadgeDollarSign,
+  Store,
+  ShoppingBasket,
+  Wallet,
+  Trophy,
+  Crown,
+  PiggyBank,
+  WalletCards,
+  Link2
+} from 'lucide-react';
+
+export const CATEGORIES = [
+  // Expenses
+  { name: "Food", type: "expense", icon: Utensils, color: "bg-orange-100 text-orange-600" },
+  { name: "Bills", type: "expense", icon: Receipt, color: "bg-red-100 text-red-600" },
+  { name: "Groceries", type: "expense", icon: ShoppingCart, color: "bg-blue-100 text-blue-600" },
+  { name: "Transportation", type: "expense", icon: Car, color: "bg-cyan-100 text-cyan-600" },
+  { name: "Entertainment", type: "expense", icon: Gamepad2, color: "bg-fuchsia-100 text-fuchsia-600" },
+  { name: "Health", type: "expense", icon: HeartPulse, color: "bg-rose-100 text-rose-600" },
+  { name: "Education", type: "expense", icon: GraduationCap, color: "bg-indigo-100 text-indigo-600" },
+  { name: "Shopping", type: "expense", icon: ShoppingBag, color: "bg-pink-100 text-pink-600" },
+  { name: "Housing", type: "expense", icon: Home, color: "bg-emerald-100 text-emerald-600" },
+  { name: "Utilities", type: "expense", icon: Zap, color: "bg-yellow-100 text-yellow-600" },
+  { name: "Insurance", type: "expense", icon: ShieldCheck, color: "bg-slate-200 text-slate-700" },
+  { name: "Personal Care", type: "expense", icon: Scissors, color: "bg-violet-100 text-violet-600" },
+  { name: "Gifts", type: "expense", icon: Gift, color: "bg-red-100 text-red-500" },
+  { name: "Travel", type: "expense", icon: Plane, color: "bg-sky-100 text-sky-600" },
+  { name: "Subscriptions", type: "expense", icon: Receipt, color: "bg-purple-100 text-purple-600" },
+  { name: "Phone", type: "expense", icon: Smartphone, color: "bg-blue-100 text-blue-600" },
+  { name: "Internet", type: "expense", icon: Wifi, color: "bg-cyan-100 text-cyan-600" },
+  { name: "Fuel", type: "expense", icon: Fuel, color: "bg-orange-100 text-orange-600" },
+  { name: "Taxi", type: "expense", icon: CarTaxiFront, color: "bg-yellow-100 text-yellow-700" },
+  { name: "Parking", type: "expense", icon: SquareParking, color: "bg-slate-100 text-slate-700" },
+  { name: "Maintenance", type: "expense", icon: Wrench, color: "bg-gray-200 text-gray-700" },
+  { name: "Child Care", type: "expense", icon: Baby, color: "bg-pink-100 text-pink-600" },
+  { name: "Pets", type: "expense", icon: PawPrint, color: "bg-amber-100 text-amber-700" },
+  { name: "Medicine", type: "expense", icon: Pill, color: "bg-rose-100 text-rose-600" },
+  { name: "Gym", type: "expense", icon: Dumbbell, color: "bg-red-100 text-red-600" },
+  { name: "Clothing", type: "expense", icon: Shirt, color: "bg-indigo-100 text-indigo-600" },
+  { name: "Electronics", type: "expense", icon: Smartphone, color: "bg-slate-200 text-slate-700" },
+  { name: "Taxes", type: "expense", icon: Landmark, color: "bg-stone-200 text-stone-700" },
+  { name: "Charity", type: "expense", icon: HandHeart, color: "bg-pink-100 text-pink-600" },
+  { name: "Dining Out", type: "expense", icon: Soup, color: "bg-orange-100 text-orange-600" },
+  { name: "Coffee", type: "expense", icon: Coffee, color: "bg-amber-100 text-amber-700" },
+
+  
+  // Incomes
+  { name: "Salary", type: "income", icon: Briefcase, color: "bg-green-100 text-green-600" },
+  { name: "Freelance", type: "income", icon: Laptop, color: "bg-purple-100 text-purple-600" },
+  { name: "Investment", type: "income", icon: Coins, color: "bg-teal-100 text-teal-600" },
+  { name: "Bonus", type: "income", icon: Award, color: "bg-amber-100 text-amber-600" },
+  { name: "Rental", type: "income", icon: Key, color: "bg-lime-100 text-lime-600" },
+  { name: "Interest", type: "income", icon: PieChart, color: "bg-cyan-100 text-cyan-600" },
+  { name: "Dividends", type: "income", icon: TrendingUp, color: "bg-emerald-100 text-emerald-500" },
+  { name: "Refunds", type: "income", icon: Undo, color: "bg-indigo-100 text-indigo-500" },
+  { name: "Side Hustle", type: "income", icon: Coffee, color: "bg-orange-100 text-orange-500" },
+  { name: "Commission", type: "income", icon: BadgeDollarSign, color: "bg-green-100 text-green-600" },
+  { name: "Business", type: "income", icon: Store, color: "bg-blue-100 text-blue-600" },
+  { name: "Sales", type: "income", icon: ShoppingBasket, color: "bg-cyan-100 text-cyan-600" },
+  { name: "Cashback", type: "income", icon: Wallet, color: "bg-lime-100 text-lime-700" },
+  { name: "Scholarship", type: "income", icon: GraduationCap, color: "bg-indigo-100 text-indigo-600" },
+  { name: "Prize", type: "income", icon: Trophy, color: "bg-yellow-100 text-yellow-700" },
+  { name: "Royalties", type: "income", icon: Crown, color: "bg-amber-100 text-amber-700" },
+  { name: "Pension", type: "income", icon: PiggyBank, color: "bg-pink-100 text-pink-600" },
+  { name: "Allowance", type: "income", icon: WalletCards, color: "bg-teal-100 text-teal-600" },
+  { name: "Affiliate", type: "income", icon: Link2, color: "bg-violet-100 text-violet-600" },
+];
+
+export const getCategoryIcon = (name) => {
+  if (!name) return Tag;
+  const cat = CATEGORIES.find(c => c.name.toLowerCase() === name.toLowerCase());
+  return cat ? cat.icon : Tag;
+};
+
+export const getCategoryColor = (name) => {
+  if (!name) return "bg-slate-100 text-slate-600";
+  const cat = CATEGORIES.find(c => c.name.toLowerCase() === name.toLowerCase());
+  return cat ? cat.color : "bg-slate-100 text-slate-600";
+};
