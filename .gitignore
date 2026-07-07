@@ -32,3 +32,4 @@ Thumbs.db
 *.local
 .cache/
 coverage/
+vercel.json
