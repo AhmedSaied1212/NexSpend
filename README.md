@@ -1,84 +1,121 @@
 # 💰 NexSpend
 
-A modern Full Stack Personal Finance Management application built with React, Node.js, Express, and MongoDB.
+A modern Full Stack Personal Finance Management application built with **React**, **Node.js**, **Express**, and **MongoDB**.
 
-NexSpend helps users manage their income and expenses, visualize financial insights, export reports, and track spending through a clean and responsive dashboard.
+NexSpend helps users manage their personal finances by tracking income and expenses, visualizing financial insights, exporting reports, and securely managing their accounts through a modern and responsive dashboard.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-### 🔐 Authentication
+## 🔐 Authentication & Security
 
-- User Registration
-- Secure Login & Logout
-- JWT Authentication
-- Protected Routes
+* User Registration
+* Secure Login & Logout
+* JWT Authentication
+* HTTP Only Cookies
+* Protected Routes
+* Email Verification
+* Resend Verification Email
+* Forgot Password
+* Reset Password
+* Password Change
+* Password Strength Validation
+* Route Rate Limiting
+* bcrypt Password Hashing
 
-### 💸 Transaction Management
+---
 
-- Add Income & Expenses
-- Edit Transactions
-- Delete Transactions
-- Transaction Details Page
-- Categories Support
-- Custom Categories
-- Date Management
+## 👤 User Profile
 
-### 📊 Analytics Dashboard
+* Profile Information
+* Profile Picture Upload
+* Update Account Settings
 
-- Monthly Cash Flow
-- Income vs Expense Charts
-- Savings Rate
-- Category Breakdown
-- Daily Activity
-- Financial KPIs
+---
 
-### 📄 Export
+## 💸 Transaction Management
 
-- Export to PDF
-- Export to Excel
+* Add Transactions
+* Edit Transactions
+* Delete Transactions
+* Transaction Details Page
+* Income & Expense Tracking
+* Categories Support
+* Custom Categories
+* Date Management
+* Search Transactions
 
-### 🎨 UI / UX
+---
 
-- Modern Responsive Design
-- Dark / Light Mode
-- Smooth Animations
-- Clean Dashboard
-- Form Validation
-- Password Strength Indicator
-- Loading States
-- Toast Notifications
+## 📊 Analytics Dashboard
+
+* Monthly Cash Flow
+* Income vs Expense Charts
+* Savings Rate
+* Daily Activity
+* Financial KPIs
+* Category Breakdown
+* Interactive Charts
+
+---
+
+## 📄 Export
+
+* Export Transactions to PDF
+* Export Transactions to Excel
+
+---
+
+## 🎨 UI / UX
+
+* Responsive Design
+* Dark / Light Mode
+* Modern Dashboard
+* Smooth Animations
+* Loading States
+* Toast Notifications
+* Reusable Components
+* Beautiful Authentication Pages
 
 ---
 
 # 🛠 Tech Stack
 
-### Frontend
+## Frontend
 
-- React
-- React Router
-- Tailwind CSS
-- shadcn/ui
-- Recharts
-- Axios
-- React Hot Toast
-- Lucide Icons
+* React
+* React Router
+* Tailwind CSS
+* shadcn/ui
+* Axios
+* Recharts
+* React Hot Toast
+* Lucide React
+* Context API
 
-### Backend
+---
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT
-- bcrypt
+## Backend
 
-### Export
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT
+* bcrypt
+* Multer
+* Cloudinary
+* Nodemailer
+* Express Rate Limit
 
-- jsPDF
-- jspdf-autotable
-- SheetJS (xlsx)
+---
+
+## Export
+
+* jsPDF
+* jspdf-autotable
+* SheetJS (xlsx)
 
 ---
 
@@ -86,12 +123,16 @@ NexSpend helps users manage their income and expenses, visualize financial insig
 
 > Add screenshots here
 
-- Dashboard
-- Analytics
-- Login
-- Register
-- Transaction Details
-- Settings
+* Dashboard
+* Analytics
+* Login
+* Register
+* Email Verification
+* Forgot Password
+* Transaction Details
+* Settings
+* Dark Mode
+* Mobile View
 
 ---
 
@@ -100,21 +141,21 @@ NexSpend helps users manage their income and expenses, visualize financial insig
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/nexspend.git
+git clone https://github.com/AhmedSaied1212/NexSpend.git
 ```
 
-Frontend
+## Frontend
 
 ```bash
-cd client
+cd frontend
 npm install
 npm run dev
 ```
 
-Backend
+## Backend
 
 ```bash
-cd server
+cd backend
 npm install
 npm run dev
 ```
@@ -130,72 +171,110 @@ PORT=5000
 
 MONGO_URI=your_mongodb_connection
 
-JWT_SECRET=your_secret_key
+JWT_SECRET=your_secret
+
+FRONTEND_URL=http://localhost:5173
+
+BASE_URL=http://localhost:5000
+
+CLOUDINARY_CLOUD_NAME=
+
+CLOUDINARY_API_KEY=
+
+CLOUDINARY_API_SECRET=
+
+EMAIL_USER=
+
+EMAIL_PASS=
 ```
 
 ---
 
 # 📂 Project Structure
 
-```
-client/
+```text
+frontend/
 │
 ├── components/
 ├── context/
 ├── hooks/
+├── layouts/
 ├── pages/
 ├── services/
 ├── utils/
-├── data/
+├── assets/
 └── App.jsx
 
-server/
+backend/
 │
+├── config/
 ├── controllers/
 ├── middleware/
 ├── models/
 ├── routes/
-├── config/
+├── utils/
 └── server.js
 ```
 
 ---
 
+# 🔒 Security Features
+
+* JWT Authentication
+* HTTP Only Cookies
+* Password Hashing
+* Email Verification
+* Password Reset Tokens
+* Route Protection
+* Rate Limiting
+* Secure Password Validation
+
+---
+
 # 📈 Future Improvements
 
-- Budget Planning
-- Recurring Transactions
-- Multi Currency Support
-- CSV Import
-- Notifications
-- Email Reports
-- Financial Goals
-- Account Statistics
-- Search & Advanced Filters
-- Profile Editing
+* Budget Planning
+* Recurring Transactions
+* Multi Currency Support
+* CSV Import
+* Push Notifications
+* Email Reports
+* Financial Goals
+* Pagination
+* Advanced Filters
+* Sorting
+* Admin Dashboard
+* Redis Caching
 
 ---
 
 # 📌 Highlights
 
-- Full Stack Architecture
-- REST API
-- Authentication System
-- Analytics Dashboard
-- PDF & Excel Export
-- Dark / Light Theme
-- Responsive Design
-- Clean Component Structure
-- Reusable Hooks
-- Modern UI
+* Full Stack Architecture
+* REST API
+* Authentication System
+* Email Verification System
+* Password Recovery
+* Secure Cookies
+* Profile Picture Upload
+* Analytics Dashboard
+* Interactive Charts
+* PDF & Excel Export
+* Dark / Light Theme
+* Responsive Design
+* Clean Folder Structure
+* Reusable Hooks
+* Modern UI
+* Production Ready Architecture
 
 ---
 
 # 👨‍💻 Author
 
-Ahmed Saied
+**Ahmed Saied**
 
-GitHub:
+GitHub
+
 https://github.com/AhmedSaied1212
 
 ---
