@@ -14,7 +14,7 @@ const SideBar = ({ isOpen, setIsOpen }) => {
   const location = useLocation();
 
   const links = [
-    { name: "Dashboard",  path: "/",           icon: <LayoutDashboard size={20} /> },
+    { name: "Dashboard",  path: "/dashboard",  icon: <LayoutDashboard size={20} /> },
     { name: "Analytics",  path: "/charts",      icon: <ChartPie size={20} /> },
     { name: "Expenses",   path: "/expenses",    icon: <TrendingDown size={20} /> },
     { name: "Income",     path: "/income",      icon: <TrendingUp size={20} /> },

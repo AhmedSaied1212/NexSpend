@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:9999/api/v1";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const api = {
     get: (request) => {
@@ -10,6 +10,15 @@ const api = {
     post: (request, credentials) => {
         return fetch(`${BASE_URL}/${request}`, {
             method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            credentials: "include",
+            body: JSON.stringify(credentials),
+        })
+    },
+
+    patch: (request, credentials) => {
+        return fetch(`${BASE_URL}/${request}`, {
+            method: "PATCH",
             headers: { 'Content-Type': 'application/json' },
             credentials: "include",
             body: JSON.stringify(credentials),

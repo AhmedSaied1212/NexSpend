@@ -1,7 +1,7 @@
 import { Eye, EyeOff, Loader2, Lock, Mail, User, Wallet } from 'lucide-react';
 import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import authServices from '../services/authServices';
+import authServices from '../../services/authServices';
 import toast from 'react-hot-toast';
 import FormField from '@/components/ui/FormField';
 import PasswordStrength from '@/components/ui/PasswordStrength';
@@ -48,8 +48,12 @@ const Register = () => {
     try {
       const data = await authServices.register({ name, email, password });
       if (data?.success) {
-        toast.success('Account created! Please sign in.');
-        navigate('/login');
+        navigate("/verification-send", {
+          state: {
+            email,
+            purpose: "register"
+          },
+        });
       }
     } catch (error) {
       toast.error(error.message);

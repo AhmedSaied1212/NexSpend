@@ -8,7 +8,7 @@ import toast from 'react-hot-toast';
 
 // Map routes to readable page titles
 const PAGE_TITLES = {
-  '/':           'Dashboard',
+  '/dashboard':  'Dashboard',
   '/charts':     'Analytics',
   '/expenses':   'Expenses',
   '/income':     'Income',
@@ -64,11 +64,26 @@ const Header = ({ onMenuClick }) => {
 
         {/* Right: greeting + theme toggle + logout */}
         <div className="flex items-center gap-2 md:gap-4 shrink-0">
-          {/* Greeting – hidden on very small screens */}
-          <span className="hidden sm:block text-sm text-muted-foreground whitespace-nowrap">
-            Hello,{' '}
-            <span className="font-semibold text-foreground">{user?.name}</span>
-          </span>
+          {/* User profile picture / avatar */}
+          <div className="flex items-center gap-2">
+            {user?.profilePhoto ? (
+              <img
+                src={user.profilePhoto}
+                alt={user.name}
+                onClick={() => navigate("/settings")}
+                className="w-8 h-8 rounded-full object-cover cursor-pointer hover:scale-110 duration-500 border border-border shadow-xs"
+              />
+            ) : (
+              <div className="w-8 h-8 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold text-sm border border-blue-500/20 select-none">
+                {user?.name?.charAt(0).toUpperCase()}
+              </div>
+            )}
+            {/* Greeting – hidden on very small screens */}
+            <span className="hidden sm:block text-sm text-muted-foreground whitespace-nowrap">
+              Hello,{' '}
+              <span className="font-semibold text-foreground">{user?.name}</span>
+            </span>
+          </div>
 
           {/* Theme toggle */}
           <button

@@ -1,9 +1,9 @@
 import { Eye, EyeOff, Loader2, Lock, Mail, Wallet } from 'lucide-react';
 import React, { useContext, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import authServices from '../services/authServices';
+import authServices from '../../services/authServices';
 import toast from 'react-hot-toast';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 import FormField from '@/components/ui/FormField';
 
 // ─── Validators ───────────────────────────────────────────────────────────────
@@ -131,6 +131,9 @@ const Login = () => {
               </button>
             </div>
           </FormField>
+            <div className='relative  mb-5'>
+              <Link to="/forgot-password" className='absolute right-3 top-[-20px] text-sm text-blue-500 hover:underline '>Forgot Password?</Link>
+            </div>
 
           {/* Submit */}
           <button
